@@ -1,6 +1,6 @@
 # github-project-3IW2-LA
 
-# A Propos
+# A propos
 
 Name : JOSEPH-ROTROU Louis-Antoine
 
