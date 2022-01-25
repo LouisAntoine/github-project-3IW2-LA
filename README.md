@@ -7,7 +7,7 @@ Class : 3IW2
 
 Afin de lancer le Sass de ce projet github, veuillez suivre les instructions ci-dessous :
 
-Dans le terminal :
+- Dans le terminal :
 
 $ npm install node-sass
 
@@ -15,7 +15,7 @@ $ npm init
 (génération de package.json)
 
 
-Dans package.json, définition d’un script de surveillance du dossier scss (dans le tableau « scripts »):
+- Dans package.json, définition d’un script de surveillance du dossier scss (dans le tableau « scripts »):
 
 "scripts": {
 
@@ -24,6 +24,6 @@ Dans package.json, définition d’un script de surveillance du dossier scss (da
 }
 
 
-Lancement du script de surveillance dans le terminal :
+- Lancement du script de surveillance dans le terminal :
 
 $ npm run watch
