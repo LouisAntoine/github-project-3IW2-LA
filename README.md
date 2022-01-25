@@ -16,8 +16,11 @@ $ npm init
 
 
 Dans package.json, définition d’un script de surveillance du dossier scss (dans le tableau « scripts »):
+
 "scripts": {
- "watch": "node-sass --watch scss -o scss »
+
+"watch": "node-sass --watch scss -o scss »
+
 }
 
 
