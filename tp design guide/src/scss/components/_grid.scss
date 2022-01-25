@@ -1,0 +1,105 @@
+$columnNb: 12;
+$gutter: 30px;
+$sm-breakpoint: 25%;
+$md-breakpoint: 50%;
+$lg-breakpoint: 100%;
+
+.row-1 {
+  background: green;
+  padding: $gutter;
+}
+
+.row-2 {
+  background: purple;
+  padding: $gutter;
+}
+
+.row-3 {
+  background: yellow;
+  padding: $gutter;
+}
+
+.row-4 {
+  background: blue;
+  padding: $gutter;
+}
+
+.row-5 {
+  background: red;
+  padding: $gutter;
+}
+
+.grid-lg {
+  --grid-cols: #{$columnNb};
+
+  display: grid;
+  grid-gap: var(--grid-gap, $gutter); // default value is $gutter
+  grid-template-columns: repeat(
+    var(--grid-cols),
+    1fr
+  ); // grid has 12 flexible columns by default
+
+  & > * {
+    grid-column-end: span var(--grid-cols); // each grid item will take full width by default
+  }
+}
+
+.grid-md {
+  --grid-cols: #{$columnNb};
+
+  display: grid;
+  max-width: 50%;
+  grid-gap: var(--grid-gap, $gutter); // default value is $gutter
+  grid-template-columns: repeat(
+    var(--grid-cols),
+    1fr
+  ); // grid has 12 flexible columns by default
+
+  & > * {
+    grid-column-end: span var(--grid-cols); // each grid item will take full width by default
+  }
+}
+
+.grid-sm {
+  --grid-cols: #{$columnNb};
+
+  display: grid;
+  max-width: 25%;
+  grid-gap: var(--grid-gap, $gutter); // default value is $gutter
+  grid-template-columns: repeat(
+    var(--grid-cols),
+    1fr
+  ); // grid has 12 flexible columns by default
+
+  & > * {
+    grid-column-end: span var(--grid-cols); // each grid item will take full width by default
+  }
+}
+
+@for $i from 1 to $columnNb {
+  .col-#{$i} {
+    grid-column-end: span #{$i};
+  }
+  .col-start-#{$i} {
+    grid-column-start: #{$i};
+  }
+  .col-end-#{$i + 1} {
+    grid-column-end: #{$i + 1};
+  }
+}
+
+.grid-gap-xs {
+  --grid-gap: var(--space-xs, 0.5rem);
+}
+.grid-gap-sm {
+  --grid-gap: var(--space-sm, 0.75rem);
+}
+.grid-gap-md {
+  --grid-gap: var(--space-md, 1.25rem);
+}
+.grid-gap-lg {
+  --grid-gap: var(--space-lg, 2rem);
+}
+.grid-gap-xl {
+  --grid-gap: var(--space-xl, 3.25rem);
+}

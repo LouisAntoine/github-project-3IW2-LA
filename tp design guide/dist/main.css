@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap);body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #aaa;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #c4c4c4;
+}
+.button--success {
+  background-color: #31aa66;
+}
+.button--success:hover {
+  background-color: #45c97f;
+}
+.button--alert {
+  background-color: #ce0a0a;
+}
+.button--alert:hover {
+  background-color: #f41717;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  padding-top: 42%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner--text {
+  position: relative;
+}
+.banner--text > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+.banner--text > div p {
+  margin: auto;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  max-width: 75%;
+  text-align: center;
+}
+
+.row-1 {
+  background: green;
+  padding: 30px;
+}
+
+.row-2 {
+  background: purple;
+  padding: 30px;
+}
+
+.row-3 {
+  background: yellow;
+  padding: 30px;
+}
+
+.row-4 {
+  background: blue;
+  padding: 30px;
+}
+
+.row-5 {
+  background: red;
+  padding: 30px;
+}
+
+.grid-lg {
+  --grid-cols: 12;
+  display: grid;
+  grid-gap: var(--grid-gap, 30px);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-lg > * {
+  grid-column-end: span var(--grid-cols);
+}
+
+.grid-md {
+  --grid-cols: 12;
+  display: grid;
+  max-width: 50%;
+  grid-gap: var(--grid-gap, 30px);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-md > * {
+  grid-column-end: span var(--grid-cols);
+}
+
+.grid-sm {
+  --grid-cols: 12;
+  display: grid;
+  max-width: 25%;
+  grid-gap: var(--grid-gap, 30px);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-sm > * {
+  grid-column-end: span var(--grid-cols);
+}
+
+.col-1 {
+  grid-column-end: span 1;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-2 {
+  grid-column-end: span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-3 {
+  grid-column-end: span 3;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.col-4 {
+  grid-column-end: span 4;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.col-5 {
+  grid-column-end: span 5;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
+.col-6 {
+  grid-column-end: span 6;
+}
+
+.col-start-6 {
+  grid-column-start: 6;
+}
+
+.col-end-7 {
+  grid-column-end: 7;
+}
+
+.col-7 {
+  grid-column-end: span 7;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
+}
+
+.col-end-8 {
+  grid-column-end: 8;
+}
+
+.col-8 {
+  grid-column-end: span 8;
+}
+
+.col-start-8 {
+  grid-column-start: 8;
+}
+
+.col-end-9 {
+  grid-column-end: 9;
+}
+
+.col-9 {
+  grid-column-end: span 9;
+}
+
+.col-start-9 {
+  grid-column-start: 9;
+}
+
+.col-end-10 {
+  grid-column-end: 10;
+}
+
+.col-10 {
+  grid-column-end: span 10;
+}
+
+.col-start-10 {
+  grid-column-start: 10;
+}
+
+.col-end-11 {
+  grid-column-end: 11;
+}
+
+.col-11 {
+  grid-column-end: span 11;
+}
+
+.col-start-11 {
+  grid-column-start: 11;
+}
+
+.col-end-12 {
+  grid-column-end: 12;
+}
+
+.grid-gap-xs {
+  --grid-gap: var(--space-xs, 0.5rem);
+}
+
+.grid-gap-sm {
+  --grid-gap: var(--space-sm, 0.75rem);
+}
+
+.grid-gap-md {
+  --grid-gap: var(--space-md, 1.25rem);
+}
+
+.grid-gap-lg {
+  --grid-gap: var(--space-lg, 2rem);
+}
+
+.grid-gap-xl {
+  --grid-gap: var(--space-xl, 3.25rem);
+}
