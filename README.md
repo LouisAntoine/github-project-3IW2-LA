@@ -1,9 +1,12 @@
 # github-project-3IW2-LA
 
+# A Propos
+
 Name : JOSEPH-ROTROU Louis-Antoine
 
 Class : 3IW2
 
+# Installation
 
 Afin de lancer le Sass de ce projet github, veuillez suivre les instructions ci-dessous :
 
@@ -23,6 +26,7 @@ $ npm init
 
 }
 
+# Lancement
 
 - Lancement du script de surveillance dans le terminal :
 
