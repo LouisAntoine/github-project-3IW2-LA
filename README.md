@@ -9,9 +9,9 @@ Afin de lancer le Sass de ce projet github, veuillez suivre les instructions ci-
 
 Dans le terminal :
 
-npm install node-sass
+$ npm install node-sass
 
-npm init
+$ npm init
 (génération de package.json)
 
 
@@ -23,4 +23,4 @@ Dans package.json, définition d’un script de surveillance du dossier scss (da
 
 Lancement du script de surveillance dans le terminal :
 
-npm run watch
+$ npm run watch
