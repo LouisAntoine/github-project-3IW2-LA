@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# github-project-3IW2-LA
 
-You can use the [editor on GitHub](https://github.com/LouisAntoine/github-project-3IW2-LA/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+# A propos
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Name : JOSEPH-ROTROU Louis-Antoine
 
-### Markdown
+Class : 3IW2
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Installation
 
-```markdown
-Syntax highlighted code block
+Téléchargez le code sur votre machine grâce à [ce repo](https://github.com/LouisAntoine/github-project-3IW2-LA "my repo"), puis dirigez vous dans le dossier "tp design guide" afin de pouvoir lancer ce projet.
 
-# Header 1
-## Header 2
-### Header 3
+Afin de lancer le Sass de ce projet github, veuillez suivre les instructions ci-dessous :
 
-- Bulleted
-- List
+Pour pouvoir utiliser les commandes npm, il faut avoir node d'installé sur votre machine. 
+Pour verifier cela vous pouvez éxécuter la commande suivante :
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+$ node -v
+$ npm -v
+```
+S'il n'y a aucun résultat, veuillez [installer node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm "node installation").
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- Dans le terminal :
+```
+$ npm install node-sass
 
-### Jekyll Themes
+$ npm init
+```
+(génération de package.json)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LouisAntoine/github-project-3IW2-LA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+- Dans package.json, définition d’un script de surveillance du dossier scss (dans le tableau « scripts »):
+```
+"scripts": {
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+"watch": "node-sass --watch scss -o scss"
+
+}
+```
+# Lancement
+
+- Lancement du script de surveillance dans le terminal :
+```
+$ npm run watch
+```
